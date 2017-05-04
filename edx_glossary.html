@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+        
+        <script type="text/javascript">
+            function showWeek(showClass){
+                $(showClass).toggle(true);
+                $(".term").not(showClass).toggle(false);
+            }
+            
+            function showAll(){
+                $(".term").toggle(true);
+            }
+            </script>
+        
+        <style>
+            .hide{
+                display: none;
+            }
+            .show{
+                display: block;
+            }
+        </style>
+	</head>
+
+    
+	<body>
+        <h3 style="margin-bottom: 2%; font-size: 20px;">Glossary</h3>
+        <div style="display: block; width: 100%; margin: auto; text-align: center;">
+              <a style="margin-right: 2.5%;" href="#a">A</a>
+              <a style="margin-right: 2.5%;" href="#b">B</a>
+              <a style="margin-right: 2.5%;" href="#c">C</a>
+              <a style="margin-right: 2.5%;" href="#d">D</a>
+              <a style="margin-right: 2.5%;" href="#e">E</a>
+              <a style="margin-right: 2.5%;" href="#f">F</a>
+              <a style="margin-right: 2.5%;" href="#g">G</a>
+              <a style="margin-right: 2.5%;" href="#h">H</a>
+              <a style="margin-right: 2.5%;" href="#i">I</a>
+              <a style="margin-right: 2.5%;" href="#j">J</a>
+              <a style="margin-right: 2.5%;" href="#k">K</a>
+              <a style="margin-right: 2.5%;" href="#l">L</a>
+              <a style="margin-right: 2.5%;" href="#m">M</a>
+              <a style="margin-right: 2.5%;" href="#n">N</a>
+              <a style="margin-right: 2.5%;" href="#o">O</a>
+              <a style="margin-right: 2.5%;" href="#p">P</a>
+              <a style="margin-right: 2.5%;" href="#q">Q</a>
+              <a style="margin-right: 2.5%;" href="#r">R</a>
+              <a style="margin-right: 2.5%;" href="#s">S</a>
+              <a style="margin-right: 2.5%;" href="#t">T</a>
+              <a style="margin-right: 2.5%;" href="#u">U</a>
+              <a style="margin-right: 2.5%;" href="#v">V</a>
+              <a style="margin-right: 2.5%;" href="#w">W</a>
+              <a style="margin-right: 2.5%;" href="#x">X</a>
+              <a style="margin-right: 2.5%;" href="#y">Y</a>
+              <a style="margin-right: 2.5%;" href="#z">Z</a>
+              <a href="#num">#</a>
+            </div>
+        <div id="weekNav">
+            <button onclick="showAll()">Show All Terms</button>
+            <button onclick="showWeek('.w1')">Week 1</button>
+            <button onclick="showWeek('.w2')">Week 2</button>
+            <button onclick="showWeek('.w3')">Week 3</button>
+            <button onclick="showWeek('.w4')">Week 4</button>
+            <button onclick="showWeek('.w5')">Week 5</button>
+        </div>
+        
+        <h3 id="a">A</h3>
+        <div class="term w2">
+            <p><span style="font-weight: bold;">AAA: </span>Big-budgeted games that are at the top of the "video game scale". They have high production value. <span style="font-style: italic;">(W2, Scale of Development)</span></p>
+        </div>
+                
+        <h3 id="b">B</h3>
+        <hr style="margin-bottom: 2%:;" />
+        
+        <h3 id="c">C</h3>
+       
+              
+        <h3 id="d">D</h3>
+       
+            
+        <h3 id="e">E</h3>
+        
+        
+        
+        <h3 id="f">F</h3>
+       
+        
+        <h3 id="g">G</h3>
+               
+        <h3 id="h">H</h3>
+        <hr style="margin-bottom: 2%:;" />
+        
+        <h3 id="i">I</h3>
+       
+        
+        <h3 id="j">J</h3>
+        <hr style="margin-bottom: 2%:;" />
+       
+        <h3 id="k">K</h3>
+        <hr style="margin-bottom: 2%:;" />
+       
+        <h3 id="l">L</h3>
+              
+        <h3 id="m">M</h3>
+       
+        <h3 id="n">N</h3>
+       
+        <hr style="margin-bottom: 2%:;" />
+        
+        <h3 id="o">O</h3>
+        
+        
+        <h3 id="p">P</h3>
+       
+        <h3 id="q">Q</h3>
+        
+        <h3 id="r">R</h3>
+        
+        <h3 id="s">S</h3>
+       
+    
+        <h3 id="t">T</h3>
+             
+        <h3 id="u">U</h3>
+        <hr style="margin-bottom: 2%:;" />
+      
+        <h3 id="v">V</h3>
+        <hr style="margin-bottom: 2%:;" />
+       
+        <h3 id="w">W</h3>
+        <hr style="margin-bottom: 2%:;" />
+       
+        <h3 id="x">X</h3>
+        <hr style="margin-bottom: 2%:;" />
+        
+        <h3 id="y">Y</h3>
+        <hr style="margin-bottom: 2%:;" />
+        
+        <h3 id="z">Z</h3>
+        <hr style="margin-bottom: 2%:;" />
+        
+        <h3 id="num">#</h3>
+        
+        </div>
+	</body>
+</html>
